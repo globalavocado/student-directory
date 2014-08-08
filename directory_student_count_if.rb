@@ -29,7 +29,7 @@ end
 # this is the method that prints the list of students
 def print(students)
 	students.each_with_index do |student, index|
-		if index <= 3
+		until index = 4
 			puts "#{index +1} #{student[:name]} (#{student[:cohort]} cohort)"
 		end
 	end
